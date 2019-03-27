@@ -1,0 +1,599 @@
+@font-face {
+    font-family: 'aniron';
+    src: url("fonts/anicb.ttf");
+}
+
+@font-face {
+    font-family: 'party business';
+    src: url("fonts/partybusiness.ttf");
+}
+
+@font-face {
+    font-family: 'tengwar';
+    src: url("fonts/tngani.ttf");
+}
+
+html {
+    font-size: 0.8rem;
+}
+
+body {
+    font-family: 'party business' !important;
+    background-image: url("imgs/bg_light.png");
+}
+
+h2 {
+    font-size: 1.5rem !important;
+    font-family: 'aniron';
+}
+
+.menu {
+    background-color: rgb(250, 116, 54);
+    font-family: 'aniron';
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.divider {
+    max-height: 30px;
+    margin-top: 0.5%;
+}
+
+ul .active {
+    background-color: transparent;
+    color: white;
+    border-bottom: 3px solid white;
+    padding-bottom: 0;
+}
+
+li .active {
+    background-color: transparent !important;
+    color: rgb(250, 116, 54) !important;
+    border-bottom: 3px solid rgb(250, 116, 54);
+    border-radius: 0 !important;
+}
+
+.homeLink {
+    font-size: 1.2rem !important;
+}
+
+.sauronCarousel {
+    max-height: 300px;
+}
+
+.carouselElement {
+    min-height: 400px;
+}
+
+.carouselPicture {
+    max-height: 600px;
+}
+
+/*.collapse .active{
+    background-color: red;
+    font
+}*/
+
+.glyph {
+    font-family: 'tengwar';
+    color: rgb(250, 116, 54);
+    font-size: 1rem;
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+}
+
+.smallText {
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 2%;
+}
+
+.mostList li {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.mostList li a {
+    color: grey;
+}
+
+.wanted_content {
+    background-color: rgba(163, 163, 163, 0.5);
+    transition: background-color 0.5s;
+    height: 78.5%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card:hover .wanted_content {
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.5s;
+}
+
+.wanted_card {
+    position: absolute !important;
+    width: 25% !important;
+    transition: width 0.5s;
+    min-height: 145px !important;
+    background-image: url("imgs/bg_dark.png");
+}
+
+.card:hover .wanted_reward {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.card:hover .wanted_name {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 60%;
+    transition: all 0.5s;
+}
+
+.card:hover .wname_dead {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 60%;
+    transition: all 0.5s;
+}
+
+
+.wanted_name, .wname_dead {
+    display: none;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: auto;
+    color: white;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.wanted_reward {
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 2%;
+    border-radius: 15px;
+    padding: 1% 0% 1% 3%;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 1);
+    transition: opacity 0.5s;
+}
+
+.wanted_dead {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2%;
+    border-radius: 15px;
+    padding: 1% 0% 1% 3%;
+    transition: all 0.5s;
+}
+
+.card:hover .wanted_dead {
+    font-size: 1.2rem;
+    color: rgb(214, 23, 23);
+    text-shadow: 1px 1px 20px black;
+    transition: all 0.5s;
+}
+
+.wcontent_dead {
+    background-color: rgba(100, 100, 100, 0.5);
+    transition: all 0.5s;
+    height: 50%;
+}
+
+.card:hover .wcontent_dead {
+    background-color: rgba(173, 13, 13, 0.5);
+    width: 75%;
+    height: 60%;
+    margin: auto;
+    margin-top: 0;
+    transition: all 0.5s;
+}
+
+.wanted_amount {
+    color: rgb(230, 112, 57);
+}
+
+.wanted_title h4 {
+    font-size: 1.0rem;
+    transition: font-size 0.5s;
+}
+
+.wanted_title p {
+    font-size: 0.8rem;
+}
+
+.card_container {
+    min-height: 150px;
+}
+
+.captured {
+    background-image: url("imgs/bg_dark.png");
+}
+
+.titles{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.contact_button {
+    font-family: 'aniron';
+    color: rgb(250, 116, 54);
+    background-color: white;
+    padding: 10px;
+    border: none;
+}
+
+.media_img {
+    border-radius: 5px;
+    width: 35%;
+    height: 80%;
+}
+
+.like_button {
+    background-color:black;
+    border: none;
+    font-size: 1.2rem;
+    color: rgb(250, 116, 54);
+}
+
+.about{
+    background-image: url("imgs/bg_dark.png");
+}
+
+table {
+    margin: auto;
+}
+
+thead tr {
+    border-bottom: 2px solid black;
+}
+
+thead tr th{
+    font-family: 'aniron';
+}
+
+tbody tr{
+    border-top: 1px solid rgb(160, 160, 160);
+}
+
+td,
+th {
+    width: 50%;
+    font-size: 0.8rem;
+    padding: 2%;
+}
+
+.ring_title {
+    font-family: 'aniron';
+    color: white;
+    font-weight: 600;
+    background-color: rgb(250, 116, 54) !important;
+}
+
+.ring_content{
+    background-color: rgb(212, 212, 212);
+    border-bottom: 4px solid rgb(250, 116, 54);
+}
+
+
+
+.comment_author {
+    text-align: right;
+    color: grey;
+}
+
+.join_img {
+    border-radius: 5px;
+}
+
+.join_text {
+    height: 20%;
+    overflow: hidden;
+}
+
+.join_button {
+    font-family: 'aniron';
+    color: rgb(250, 116, 54);
+    background-color: black;
+    border: none;
+    box-shadow: 3px 3px 2px rgb(107, 107, 107);
+    padding: 1% 0 1% 0;
+}
+
+.contact_us{
+    background-image: url("imgs/bg_dark.png");
+}
+
+.more_info{
+    text-align: center;
+}
+
+.message_button{
+    background-color: rgb(250, 116, 54) !important;
+    font-family: 'aniron';
+    border: none !important;
+}
+
+.footer_content{
+    background-color: rgb(250, 116, 54);
+    font-family: 'aniron';
+}
+
+@media (max-width: 575px) {
+    .wanted_card:nth-child(1) {
+        left: 7%;
+        z-index: 3;
+    }
+
+    .wanted_card:nth-child(2) {
+        left: 36%;
+        z-index: 2;
+    }
+
+    .wanted_card:nth-child(3) {
+        left: 66%;
+        z-index: 1;
+    }
+
+    .wanted_card:hover {
+        width: 33.33% !important;
+        transition: width 0.5s;
+    }
+
+    .wanted_card:hover .wanted_title h4 {
+        font-size: 1.2rem;
+        transition: font-size 0.5s;
+    }
+
+    .wanted_card:hover .wanted_content {
+        height: 100%;
+        transition: height 0.5s;
+    }
+
+    .wanted_content, .wcontent_dead {
+        height: 50%;
+        width: 75%;
+    }
+
+    .wcontent_dead{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card:hover .wcontent_dead {
+        height: 72%;
+    }
+
+    .wanted_reward {
+        font-size: 0.5rem;
+    }
+
+    .join_img {
+        width: 120%;
+        height: 120%;
+    }
+
+    .join_button {
+        font-size: 0.4rem;
+    }
+
+    .footer_content{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 991px){
+    .carouselCaption h3 {
+
+        font-size: 2rem !important;
+    }
+
+    .carouselCaption p {
+
+        font-size: 2rem !important;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .sauronCarousel {
+        min-height: 600px;
+    }
+
+    .carouselCaption {
+        margin: auto;
+        margin-bottom: 8% !important;
+        width: 40%;
+    }
+
+    .carouselCaption h3 {
+
+        font-size: 4rem;
+    }
+
+    .carouselCaption p {
+        font-size: 2.7rem;
+        margin: 5%;
+    }
+
+    .smallText {
+        font-size: 1rem;
+        display: inline;
+    }
+
+    .mostList {
+        font-size: 1.1rem;
+        font-family: 'aniron';
+    }
+
+    .mostList li {
+        width: 20%;
+    }
+
+    .glyph {
+        font-size: 1.5rem;
+    }
+
+    li .glyph {
+        margin-left: 0.2%;
+        margin-right: 0.2%;
+    }
+
+    .wanted_card {
+        position: relative !important;
+    }
+
+    .wanted_name, .wname_dead{
+        display: block;
+        font-size: 3rem;
+    }
+
+    .card:hover .wanted_name {
+        font-size: 1.5rem;
+    }
+
+    .card:hover .wname_dead {
+        font-size: 1.5rem;
+        opacity: 0;
+    }
+
+    .wanted_dead {
+        margin-top: 10%;
+        color: rgb(230, 112, 57);
+        font-size: 3rem;
+    }
+
+    .wcontent_dead {
+        height: 78.5%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card:hover .wcontent_dead {
+        background-color: rgba(173, 13, 13, 0.5);
+        width: 90%;
+        height: 78.5%;
+        margin: auto;
+        margin-top: 0;
+        transition: all 0.5s;
+    }
+
+    .card:hover .wanted_dead {
+        font-size: 4rem;
+        padding-top: 20%;
+    }
+
+    .wanted_reward {
+        font-size: 1.5rem;
+    }
+
+    .wanted_title h4 {
+        font-size: 1.5rem;
+    }
+
+    .wanted_title p {
+        font-size: 1.4rem;
+        margin-top: 1%;
+    }
+
+    .orange{
+        background-color:rgb(250, 116, 54);
+        width: 50%;
+        height: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -1.33%;
+        margin-bottom: 1.33%;
+    }
+
+    .orange_spec{
+        background-color:rgb(250, 116, 54);
+        width: 50%;
+        height: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.33%;
+        margin-bottom: -1.33%;
+    }
+
+    .media_img {
+        width: 20%;
+        height: 100%;
+    }
+
+    .media-body a{
+        color: black;
+        text-decoration: underline;
+    }
+
+    .hunter{
+        font-size: 2.5rem;
+        color:rgb(250, 116, 54);
+    }
+
+    .card-body h5{
+        font-size: 1.5rem;
+        margin-left: 2%;
+    }
+
+    table {
+        width: 60%;
+    }
+
+    td,
+    th {
+        font-family: 'aniron';
+        font-size: 1rem;
+        padding: 1%;
+    }
+
+    tbody td, 
+    tbody th{
+        padding-left: 5%;
+        color: grey;
+    }
+
+    .comment{
+        margin-top: 5%;
+        font-size: 1.7rem;
+    }
+
+    .comment_author{
+        font-size: 1.4rem;
+    }
+
+    .join_text {
+        height: 40%;
+        font-size: 1.5rem;
+        overflow: hidden;
+    }
+
+    .more_info{
+        font-family: 'aniron';
+        color: rgb(250, 116, 54);
+        font-size: 1.5rem;
+    }
+
+    .footerSocial {
+        font-weight: 600;
+    }
+
+    .footer_list {
+        list-style: none;
+    }
+}
